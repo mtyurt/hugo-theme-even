@@ -50,6 +50,12 @@
 <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}" color="#5bbad5">
 
+<!-- sharethis -->
+
+{{ if .Site.Params.sharethis.enabled -}}
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
+{{- end }}
+
 <!-- debug -->
 {{- if .Site.Params.debug }}
 <script src="https://cdn.jsdelivr.net/npm/eruda@1.2.6/eruda.min.js" integrity="sha256-Jmz4bc3kp+rRrXX2tGadNBKFLwtzMapr8kHABxSAAP8=" crossorigin="anonymous"></script>

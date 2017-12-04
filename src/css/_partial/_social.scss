@@ -1,10 +1,11 @@
 // ==============================
-// Post footer
+// Social
 // =============================
 
-.footer {
-  margin-top: $footer-margin-top;
+.social {
+  margin-top: $social-margin-top;
+  text-align: center;
+  font-size: 30px;
 
   @import "_footer/social-links";
-  @import "_footer/copyright";
 }

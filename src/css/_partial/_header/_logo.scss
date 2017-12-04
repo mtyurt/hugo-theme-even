@@ -3,16 +3,23 @@
 // =============================
 
 .logo-wrapper {
-  float: left;
-
   .logo {
+    margin: auto;
     font-size: $logo-font-size;
     font-family: $logo-font-family;
   }
 }
+.slogan {
+  font-size: $slogan-font-size;
+  font-family: $slogan-font-family;
+  margin: auto;
+}
 
 @include max-screen() {
   .logo-wrapper {
+    display: none;
+  }
+  .slogan {
     display: none;
   }
 }

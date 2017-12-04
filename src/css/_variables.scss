@@ -97,6 +97,10 @@ $logo-font-size: 48px !default;
 // Font family of the logo.
 $logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
 
+// Slogan font size & family
+$slogan-font-size: 24px !default;
+$slogan-font-family: 'Source Sans Pro' !default;
+
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;
 
@@ -134,6 +138,8 @@ $post-meta-font-color: $dark-gray !default;
 // Border bottom of the read more link when hover it.
 $post-readMore-border-bottom: 1px solid $theme-color !default;
 
+// Margin top of top social links
+$social-margin-top: 5px !default;
 // Margin top of the post footer.
 $post-footer-margin-top: 20px !default;
 

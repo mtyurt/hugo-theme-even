@@ -1,0 +1,20 @@
+// ==============================
+// Social
+// =============================
+
+.share-this {
+  text-align: center;
+
+  .iconfont {
+    font-size: $social-icon-font-size;
+
+    & + .iconfont {
+      margin-left: $social-link-margin-left;
+    } 
+
+    &:hover {
+      color: $theme-color;
+    }
+  }
+}
+

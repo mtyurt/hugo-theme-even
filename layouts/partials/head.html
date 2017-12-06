@@ -50,11 +50,8 @@
 <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}" color="#5bbad5">
 
-<!-- sharethis -->
-
-{{ if .Site.Params.sharethis.enabled -}}
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
-{{- end }}
+<link rel="stylesheet" href="/social-share/social-share-kit.css" type="text/css">
+<script type="text/javascript" src="/social-share/social-share-kit.js"></script>
 
 <!-- debug -->
 {{- if .Site.Params.debug }}

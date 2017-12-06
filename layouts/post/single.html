@@ -2,6 +2,9 @@
   {{ $lang := .Site.Data.even.default -}}
   <article class="post">
     <!-- post-header -->
+    <div class="sharer" style="float: right;">
+        {{ partial "share.html" . }}
+    </div>
     <header class="post-header">
       <h1 class="post-title">{{ .Title }}</h1>
 
@@ -21,7 +24,6 @@
         {{- end }}
       </div>
     </header>
-
     <!-- TOC -->
     {{ partial "post/toc.html" . }}
 

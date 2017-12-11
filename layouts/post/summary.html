@@ -21,7 +21,11 @@
   <!-- Content -->
   <div class="post-content">
     <div class="post-summary">
-      {{slicestr .Summary 0 200 | safeHTML}}...
+        {{ $length := len .Summary }} {{- if gt $length 200 -}}
+            {{slicestr .Summary 0 200 | safeHTML}}...
+        {{- else -}}
+            {{ .Summary | safeHTML }}
+        {{- end -}}
     </div>
     <div class="read-more">
       <a href="{{ .URL }}" class="read-more-link">{{ $lang.posts.readmore }}</a>

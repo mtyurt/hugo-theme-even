@@ -74,6 +74,8 @@
 {{- template "_internal/google_news.html" . -}}
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
+<meta name="twitter:image" content="{{ .Site.Params.social.twitterCardImage  | absURL }}"/>
+<meta name="twitter:creator" content="@{{ .Site.Params.social.twitterHandle }}"/>
 
 <!-- Polyfill for old browsers -->
 {{ `<!--[if lte IE 9]>

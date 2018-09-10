@@ -2,9 +2,8 @@
   {{ $lang := .Site.Data.even.default -}}
   <article class="post">
     <!-- post-header -->
-    <div class="share">
-        {{ partial "share.html" . }}
-    </div>
+    <a href="#" class="image thumbnail">{{if isset .Params "thumbnail" }}<img src="{{ index .Params "thumbnail" }}"></a><br/>{{ end }}
+
     <header class="post-header">
       <h1 class="post-title">{{ .Title }}</h1>
 
@@ -22,6 +21,11 @@
         {{- end }}
       </div>
     </header>
+    <!-- Share -->
+    <div class="share">
+        {{ partial "share.html" . }}
+    </div>
+
     <!-- TOC -->
     {{ partial "post/toc.html" . }}
 

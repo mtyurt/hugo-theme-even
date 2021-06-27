@@ -76,7 +76,7 @@
 <meta name="twitter:site" content="@{{ .Site.Params.social.twitterHandle }}">
 <meta name="twitter:creator" content="@{{ .Site.Params.social.twitterHandle }}">
 {{ if .IsPage }}
-<meta name="twitter:description" content="{{ .Summary }}" />
+<meta name="twitter:description" content="{{ .Params.description }}" />
 <meta name="twitter:title" content="{{ .Title }}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="{{ .Params.twitterImage  | absURL }}" />
